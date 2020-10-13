@@ -1,0 +1,9 @@
+@import '../../utilities/variables';
+
+.main-repo-info {
+  cursor: pointer;
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

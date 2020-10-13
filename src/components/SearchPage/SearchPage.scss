@@ -1,0 +1,64 @@
+@import '../../utilities/variables';
+
+.search-page-container {
+  padding: 0 15px;
+  margin-top: 30px;
+}
+.center-horizonraly {
+  margin-left: auto;
+  margin-right: auto;
+}
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+.github_search_input {
+  width: 100%;
+  font-size: 20px;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  margin: 0 15px 0 0 !important;
+  &:focus {
+    border-bottom: 1px solid #111;
+  }
+}
+.search-btn {
+  border-radius: $borderRadius;
+  padding: $btnPadding;
+  background-color: $darkColor;
+  color: $fairColor;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  align-self: flex-end;
+  &:focus {
+    outline: none;
+  }
+}
+.pagination {
+  @media only screen and (max-width: 992px) {
+    width: auto;
+    li.prev,
+    .pagination li.next {
+      width: auto;
+    }
+  }
+  min-width: 350px;
+  @extend .center-horizonraly;
+  li {
+    cursor: pointer;
+  }
+}
+.flex {
+  display: flex;
+}
+.active {
+  background: $accentColor !important;
+}
+.alert {
+  color: $fairColor;
+  background-color: $neutralDarkerColor;
+  height: 50px;
+}

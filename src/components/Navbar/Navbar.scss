@@ -1,0 +1,13 @@
+@import '../../utilities/variables';
+
+#navbar {
+  height: 100px;
+  background-color: $darkColor;
+  padding: 10px 0 0 20px;
+  color: $fairColor;
+
+  h1 {
+    font-size: $fontSizeBig;
+    margin: 0;
+  }
+}
